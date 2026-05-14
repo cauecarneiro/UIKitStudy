@@ -8,6 +8,8 @@
 import SwiftUI
 
 // Tela feita com SwiftUI + ciclo de vida UIKit
+// Jotape
+
 struct ChatsView: View {
     var onConversationTap: () -> Void
 
