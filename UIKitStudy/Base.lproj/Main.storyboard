@@ -27,7 +27,7 @@
         <!--Chats-->
         <scene sceneID="eqg-Xd-w5P">
             <objects>
-                <viewController id="qFs-6H-bdC" customClass="ViewController" customModule="StoryboardEstudoDeCaso" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactsList" id="qFs-6H-bdC" customClass="ViewController" customModule="StoryboardEstudoDeCaso" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oCt-YM-fb0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
