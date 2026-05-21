@@ -10,7 +10,9 @@ import UIKit
 // Tela com UIKit + ViewCode
 // Cauê e Kenay
 class CallsViewController: UIViewController {
-    
+
+    let tableManager = CallsTableManager()
+
     // Funciona como uma ScrollView mas tenho que adicionar as coisas como se fosse em uma tabela (header,celulas e etc...)
     private let tableView: UITableView = {
         let table = UITableView()
@@ -84,9 +86,13 @@ class CallsViewController: UIViewController {
     }
     
     private func setupLayout() {
-        
+
         view.addSubview(tableView)
-        
+
+        tableView.register(CallViewCell.self, forCellReuseIdentifier: CallViewCell.identifier)
+        tableView.dataSource = tableManager
+        tableView.delegate = tableManager
+
         tableView.estimatedRowHeight = 65
         tableView.rowHeight = UITableView.automaticDimension
         
