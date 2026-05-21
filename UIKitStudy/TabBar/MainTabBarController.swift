@@ -31,7 +31,8 @@ class MainTabBarController: UITabBarController {
     }
 
     private func makeChatsNav() -> UINavigationController {
-        let vc = ChatsViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ContactsList")
         vc.tabBarItem = UITabBarItem(title: "Chats", image: UIImage(systemName: "message.fill"), tag: 1)
         return UINavigationController(rootViewController: vc)
     }

@@ -44,5 +44,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let storyboard = UIStoryboard(name: "Conversation", bundle: nil)
+        guard let vc = storyboard.instantiateInitialViewController() as? ConversationViewController else { return }
+        vc.contactName = nomes[indexPath.row]
+        vc.contactImageName = fotos[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

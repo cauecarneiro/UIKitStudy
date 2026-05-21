@@ -90,3 +90,8 @@ fastlane/test_output
 iOSInjectionProject/
 .DS_Store
 Mini06Game.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+# Tooling (rtk/claude/copilot)
+**/*[Rr][Tt][Kk]*
+**/*[Cc]laude*
+**/*[Cc]opilot*
